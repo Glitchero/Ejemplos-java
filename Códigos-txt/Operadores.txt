@@ -1,0 +1,22 @@
+package taller.java;
+
+public class Prueba {
+
+	public static void main(String[] args) {
+		
+		short suma;
+		suma = 3 + 10;
+		int resta= 8-17;
+		float multiplicacion =2*(15*(-2));
+		double division =10/3.4;
+       
+		
+		System.out.println("El resultado de la suma es: " + suma); //suma
+		System.out.println("El resultado de la suma es: " + resta); //resta
+		System.out.println("El resultado de la suma es: " + multiplicacion); //multiplicación
+		System.out.println("El resultado de la suma es: " + division); //división
+		
+		
+	}
+
+}

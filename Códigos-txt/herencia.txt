@@ -1,0 +1,43 @@
+package taller.java;
+
+public class app {
+
+	public static void main(String[] args) {
+		Coche coche1=new Coche();
+	
+        System.out.println("La velocidad es " + coche1.acelerar(80)); //Método heredado
+        System.out.println("La gasolina es de  " + coche1.recargar(100));
+	}
+
+}
+
+--------------------------------------------
+package taller.java;
+
+public class Vehiculo {
+public int velocidad;
+
+public int parar() {
+velocidad = 0;
+return velocidad;
+
+}
+public int acelerar(int kmh) {
+velocidad += kmh;
+return velocidad;
+}
+
+}
+
+----------------------------------------
+package taller.java;
+
+public class Coche extends Vehiculo{
+
+	public int gasolina;
+	public int recargar(int litros) {
+	gasolina+=litros;
+	return gasolina;
+	}
+}
+

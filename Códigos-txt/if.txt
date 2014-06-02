@@ -1,0 +1,22 @@
+package taller.java;
+
+public class Prueba {
+
+	public static void main(String[] args) {
+		
+		int var=6;
+		int var2=10;
+		if ((var==2) || (var2>5))
+		{
+		System.out.println("La operación es verdadera"); 
+			
+		}
+		else
+		{
+			System.out.println("La operación es falsa"); 
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,113 @@
+public class Pelota {
+
+   //variables nativas de la clase
+
+   float radio;
+   float peso;
+
+   //Constructores
+   public Pelota()
+   {
+       radio=100;
+       peso=250;
+   }
+
+     public Pelota(float radio, float peso)
+   {
+       this.radio=radio;
+       this.peso=peso;
+   }
+
+   //termina constructores
+
+   //metodos
+   public float obtenerRadio()
+   {     
+        return radio;
+   }  
+   public float obtenerPeso()
+   {     
+        return peso;
+   }  
+
+   public void patearPelota()
+   {
+      System.out.println("Haz pateado la pelota");
+   }
+   
+   public void atraparPelota()
+   {
+       System.out.println("Haz atrapado la pelota");
+   }
+
+}
+
+
+----------------------------------------------------------
+----------------------------------------------------------
+
+public class vehiculo {
+/** Función principal */
+int ruedas;
+private double velocidad=0;
+String nombre;
+/** Aumenta la velocidad*/
+public void acelerar(double cantidad) {
+velocidad += cantidad;
+}
+/** Disminuye la velocidad*/
+public void frenar(double cantidad) {
+velocidad -= cantidad;
+}
+/** Devuelve la velocidad*/
+public double obtenerVelocidad(){
+return velocidad;
+}
+public static void main(String args[]){
+vehiculo miCoche = new vehiculo();
+miCoche.acelerar(12);
+miCoche.frenar(5);
+System.out.println(miCoche.obtenerVelocidad());
+} // Da 7.0
+
+-----------------------------------------------------------
+-----------------------------------------------------------
+class Ficha {
+private int casilla;
+Ficha() { //constructor
+casilla = 1;
+}
+public void avanzar(int n) {
+casilla += n;
+}
+public int casillaActual(){
+return casilla;
+}
+}
+public class app {
+public static void main(String[] args) {
+Ficha ficha1 = new Ficha();
+ficha1.avanzar(3);
+System.out.println(ficha1.casillaActual());//Da 4
+
+--------------------------------------------------
+Método Static
+--------------------------------------------------
+--------------------------------------------------
+class Calculadora {
+static public int factorial(int n) {
+int fact=1;
+while (n>0) {
+fact *=n--;
+}
+return fact;
+}
+}
+public class app {
+public static void main(String[] args) {
+System.out.println(Calculadora.factorial(5));
+}
+}
+
+
+

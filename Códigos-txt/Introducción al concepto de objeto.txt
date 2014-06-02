@@ -1,0 +1,150 @@
+public class Pelota {
+
+   //variables nativas de la clase
+
+   float radio;
+   float peso;
+
+   //Constructores
+   public Pelota()
+   {
+       radio=100;
+       peso=250;
+   }
+
+     public Pelota(float radio, float peso)
+   {
+       this.radio=radio;
+       this.peso=peso;
+   }
+
+   //termina constructores
+
+   //metodos
+   public float obtenerRadio()
+   {     
+        return radio;
+   }  
+   public float obtenerPeso()
+   {     
+        return peso;
+   }  
+
+   public void patearPelota()
+   {
+      System.out.println("Haz pateado la pelota");
+   }
+   
+   public void atraparPelota()
+   {
+       System.out.println("Haz atrapado la pelota");
+   }
+
+}
+
+////Jugar con la clase Pelota en Main
+package taller.java;
+
+
+public class Prueba {
+
+	public static void main(String[] args) {
+		
+		 Pelota p1;
+         p1= new Pelota(100,100);
+         
+         System.out.println("El peso es " + p1.peso);
+         System.out.println("El radio es " +p1.radio);
+         p1.atraparPelota();
+         System.out.println(p1.obtenerPeso());
+	}
+
+}
+
+----------------------------------------------------------
+----------------------------------------------------------
+
+public class Carro {
+/** Función principal */
+int ruedas;
+private double velocidad=0;
+String nombre;
+/** Aumenta la velocidad*/
+public void acelerar(double cantidad) {
+velocidad += cantidad;
+}
+/** Disminuye la velocidad*/
+public void frenar(double cantidad) {
+velocidad -= cantidad;
+}
+/** Devuelve la velocidad*/
+public double obtenerVelocidad(){
+return velocidad;
+}
+
+/////////Jugamos con carro
+package taller.java;
+
+
+public class Prueba {
+
+	public static void main(String[] args) {
+		
+		Carro miCoche = new Carro();
+		miCoche.acelerar(12);
+		miCoche.frenar(5);
+		System.out.println(miCoche.obtenerVelocidad());
+	}
+
+}
+
+-----------------------------------------------------------
+-----------------------------------------------------------
+class Ficha {
+private int casilla;
+Ficha() { //constructor
+casilla = 1;
+}
+public void avanzar(int n) {
+casilla += n;
+}
+public int casillaActual(){
+return casilla;
+}
+}
+public class app {
+public static void main(String[] args) {
+Ficha ficha1 = new Ficha();
+ficha1.avanzar(3);
+System.out.println(ficha1.casillaActual());//Da 4
+
+--------------------------------------------------
+Método Static
+--------------------------------------------------
+--------------------------------------------------
+class Calculadora {
+static public int factorial(int n) {
+int fact=1;
+while (n>0) {
+fact *=n--;
+}
+return fact;
+}
+}
+package taller.java;
+
+
+public class Prueba {
+
+	
+	
+	public static void main(String[] args) {
+		
+		System.out.println(Calculadora.factorial(5));
+	
+	}
+
+}
+
+
+
